@@ -1,5 +1,5 @@
 var ssdp = {
-  _serverId: "gkfcolaochclakjhkfgilhdeapnbedao",
+  _serverId: "pfdiljjcookjofjbjnbnkgfnfmnoljmk",
   
   _ExecuteRemoteCommand: function(_request, _params, _callback, _error){
     chrome.runtime.sendMessage(this._serverId, {request: _request, params: _params}, function(response){

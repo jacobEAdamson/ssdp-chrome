@@ -1,20 +1,22 @@
 {
   "manifest_version": 2,
 
-  "name": "SSDP App",
-  "description": "This app allows extension to make a SSDP query",
-  "version": "1.0",
+  "name": "SSDP Provider",
+  "description": "This app allows extensions and webpages to make SSDP queries",
+  "version": "0.0.0.1",
 
   "app": {
     "background": {
 	  "scripts": ["app.js"]
 	}
   },
+  "icons": { 
+	"16": "16.png",
+	"48": "48.png",
+	"128": "128.png" 
+  },
   "sockets": {
     "udp": {
-      // Permission for chrome.sockets.udp.send:
-      // The application is allowed to send udp packets
-      // to any host:port combination.
       "send": ["*"],
       "bind": ["*"]
     }
